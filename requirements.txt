@@ -1,6 +1,6 @@
 fastapi 
 uvicorn #FastApi Geteway
-sqlalchemy #To convert the File to SQL
+sqlalchemy #To convert the response to SQL Query
 pandas
 python-dotenv
 matplotlib
