@@ -16,10 +16,10 @@ def load_data_from_csvs(db_url, csv_directory):
     csv_files = [f for f in os.listdir(csv_directory) if f.endswith('.csv')]
     
     if not csv_files:
-        print(f"⚠️ No CSV files found in the directory: {csv_directory}")
+        print(f"No CSV files found in the directory: {csv_directory}")
         return
 
-    print(f"📁 Found {len(csv_files)} CSV files in '{csv_directory}'. Starting data loading...\n")
+    print(f"Found {len(csv_files)} CSV files in '{csv_directory}'. Starting data loading...\n")
 
     # Loop over each CSV file
     for csv_file in csv_files:
