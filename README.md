@@ -40,10 +40,28 @@ API_KEY = your_gemini_api_key
 DB_URL = postgresql://<username>:<your-db-password>@localhost:5432/<your_db>
 ```
 
-## 2. Install the dependencies 
+### 2. Create and Activate Python Virtual Environment, Then Install Dependencies
+
+```bash
+# Create virtual environment
+python -m venv <your-venv-name>
+```
+
+#### Activate on PowerShell (Windows):
+```powershell
+.\<your-venv-name>\Scripts\activate
+```
+
+#### Activate on Linux / Git Bash:
+```bash
+source <your-venv-name>/Scripts/activate
+```
+
+#### Install project dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ## 3. Load the csv files to your PostgreSQL
 ``` bash
