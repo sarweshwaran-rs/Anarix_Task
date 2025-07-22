@@ -31,3 +31,26 @@ Anarix_Task/
 ```
 ---
 
+## Set UP Instructions
+
+## 1. Add the Environment for your Database (postgres) DB_URL and the Gemini_API_KEY
+
+``` .env
+API_KEY = your_gemini_api_key
+DB_URL = postgresql://<username>:<your-db-password>@localhost:5432/<your_db>
+```
+
+## 2. Install the dependencies 
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Load the csv files to your PostgreSQL
+``` bash
+python init_db.py or python -m init_db
+```
+
+## 4. Run the AI Agent by Running the main.py
+``` bash
+python main.py or python -m main
+```
