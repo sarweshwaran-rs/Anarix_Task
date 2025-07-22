@@ -1,18 +1,19 @@
+#Importing the necessary libriaries
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker, Session
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
+#Loading the Database URL from the environment file
 DATABASE_URL = os.getenv("DB_URL")
 
 if not DATABASE_URL:
     raise ValueError("Database URL not found, please set in")
 
-
+#Connecting to the Database
 engine = create_engine(DATABASE_URL)
-
+#Make the session to be available
 SessionLocal = sessionmaker(autocommit = False, autoflush=False, bind=engine)
 
 def get_db():
@@ -21,7 +22,7 @@ def get_db():
         yield db
     finally:
         db.close()
-
+#Getting the Schema information of the table
 def get_table_schema(session:Session, table_name: str) -> str:
     try:
         result = session.execute(text(f"""
@@ -41,7 +42,7 @@ def get_table_schema(session:Session, table_name: str) -> str:
         print(f"Error in fetching table schema for {table_name}: {error}")
         return ""
     
-
+#Getting the schemas all the tables
 def get_all_table_schemas(session:Session) -> str:
     """Fetches schemas for all relevant tables"""
     table_names = [
