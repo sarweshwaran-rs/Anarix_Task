@@ -36,13 +36,13 @@ def generate_img(result, graph_type="bar"):
     plt.figure(figsize=(8,4))
 
     if graph_type=="bar":
-        plt.bar(x,y)
+        plt.bar(x,y,color='skyblue')
     elif graph_type=="line":
-        plt.plot(x,y)
+        plt.plot(x,y,marker='o')
     elif graph_type=="pie":
-        plt.pie(y,labels=x)
+        plt.pie(y,labels=x,autopct="%1.1f%%")
 
-    plt.title("Graphical View of Result")
+    plt.title(f"{graph_type.capitalize()} Chart of {columns[1]} by {columns[0]}")
     plt.xlabel(columns[0])
     plt.ylabel(columns[1])
     plt.xticks(rotation=45)
