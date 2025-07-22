@@ -6,3 +6,4 @@ pandas
 python-dotenv
 matplotlib
 plotly
+openpyxl # for Excel Accessing the python
