@@ -60,7 +60,7 @@ python main.py or python -m main
 
 ### 2. Swagger UI (/docs)
 
-![Swagger] (docs/swagger_ui.png)
+![Swagger](docs/swagger_ui.png)
 
 ### 3. Auto-Generated Line Chart
 #### Query Asked:
