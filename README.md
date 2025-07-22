@@ -5,7 +5,7 @@ This project is the Challenge Provided by the Anarix to create a AI-powered E-Co
     - Understands the Natural Language Questions
     - Converets them to the any Database Query (I have selected the PostgreSQL) using the LLM (gemini-2.5-flash)
     - Returns the tabulated response in the terminal using the tabulate library
-    - Visualizes the results as graphs when applicable
+    - Visualizes the results as charts, bars when applicable
 
 ---
 ## Project Directory Structure
