@@ -4,5 +4,4 @@ sqlalchemy #To convert the File to SQL
 pandas
 python-dotenv
 matplotlib
-plotly
 tabulate
