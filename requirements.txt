@@ -1,9 +1,8 @@
 fastapi 
 uvicorn #FastApi Geteway
 sqlalchemy #To convert the File to SQL
-psycopg2-binary #for connecting the postgres SQL
 pandas
 python-dotenv
 matplotlib
 plotly
-openpyxl # for Excel Accessing the python
+tabulate
