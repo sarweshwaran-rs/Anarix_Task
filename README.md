@@ -59,6 +59,7 @@ python main.py or python -m main
 ![Terminal Result](docs/terminal_output.png)
 
 ### 2. Swagger UI (/docs)
+<<<<<<< HEAD
 ![Swagger] (docs/swagger_ui.png)
 
 ### 3. Auto-Generated Chart
@@ -70,3 +71,11 @@ python main.py or python -m main
 ![chart_Query](docs/chart_example_2_terminal.png)
 ![chart](docs/chart_example_2.png)
 ```
+=======
+![Swagger UI](docs/swagger_ui.png)
+
+### 3. Auto-Generated Chart
+![chart](docs/chart_example_1.png)
+
+![chart](docs/chart_example_2.png)
+>>>>>>> 763429ee51f541662bd9a46c7d0a2ee6854add3b
