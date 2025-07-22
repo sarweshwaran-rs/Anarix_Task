@@ -45,9 +45,9 @@ def get_table_schema(session:Session, table_name: str) -> str:
 def get_all_table_schemas(session:Session) -> str:
     """Fetches schemas for all relevant tables"""
     table_names = [
-        "product_level_ad_sales_and_metrics_mapped",
-        "product_level_eligibility_table_mapped",
-        "product_level_total_sales_and_metrics_mapped"
+        "product_level_ad_sales_and_metrics",
+        "product_level_eligibility_table",
+        "product_level_total_sales_and_metrics"
     ]
 
     all_schemas = []
