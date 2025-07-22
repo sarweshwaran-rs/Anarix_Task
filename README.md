@@ -62,6 +62,11 @@ python main.py or python -m main
 ![Swagger] (docs/swagger_ui.png)
 
 ### 3. Auto-Generated Chart
-![chart] (docs/chart_example_1.png)
-
-![chart] (docs/chart_example_2.png)
+``` Line Chart
+![chart_Query](docs/chart_example_1_terminal.png)
+![chart](docs/chart_example_1.png)
+```
+``` Bar Chart
+![chart_Query](docs/chart_example_2_terminal.png)
+![chart](docs/chart_example_2.png)
+```
