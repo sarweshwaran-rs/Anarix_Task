@@ -1,10 +1,11 @@
+#Importing the necessary Libraries
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from typing import List, Dict, Any
 #importing the matplotlib for plotting
 import matplotlib.pyplot as plt
 
-
+#Defining the function to execute the SQL Query
 def execute_sql(db: Session, sql_query: str) -> List[Dict[str, Any]]:
 
     try:
@@ -21,7 +22,8 @@ def execute_sql(db: Session, sql_query: str) -> List[Dict[str, Any]]:
         print(f"Error executing SQL Query: {error}")
         print(f"Problematic Query: {sql_query}")
         return [{"error":str(error), "query":sql_query}]
-    
+
+#Defining the function to visualize the result    
 def generate_img(result, graph_type="bar"):
     data = list(result)
 
