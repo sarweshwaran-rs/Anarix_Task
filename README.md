@@ -37,7 +37,7 @@ Anarix_Task/
 
 ``` .env
 API_KEY = your_gemini_api_key
-You can Collect you API_KEY from here : https://aistudio.google.com/apikey
+You can Collect you API_KEY from here: https://aistudio.google.com/apikey
 DB_URL = postgresql://<username>:<your-db-password>@localhost:5432/<your_db>
 ```
 
