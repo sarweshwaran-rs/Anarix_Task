@@ -59,7 +59,7 @@ python main.py or python -m main
 ![Terminal Result](docs/terminal_output.png)
 
 ### 2. Swagger UI (/docs)
-![Swagger UI] (docs/swagger_ui.png)
+![Swagger] (docs/swagger_ui.png)
 
 ### 3. Auto-Generated Chart
 ![chart] (docs/chart_example_1.png)
