@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 import os
 
 def load_data(db_url, excel_path):
-    url = os.getenv("DB_URL")
-    engine = create_engine(url)
+    engine = create_engine(db_url)
     df = pd.read_excel(excel_path, sheet_name=None)
 
     for sheet, data in df.items():
