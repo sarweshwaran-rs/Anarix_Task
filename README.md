@@ -37,6 +37,7 @@ Anarix_Task/
 
 ``` .env
 API_KEY = your_gemini_api_key
+You can Collect you API_KEY from here : https://aistudio.google.com/apikey
 DB_URL = postgresql://<username>:<your-db-password>@localhost:5432/<your_db>
 ```
 
@@ -71,15 +72,19 @@ python init_db.py or python -m init_db
 ## 4. Run the AI Agent by Running the main.py
 ``` bash
 python main.py or python -m main
+The output runs in the following server: http://127.0.0.1:8000/docs or http://localhost:8000/docs
 ```
+---
 ### Screenshots
 ### 1. Terminal Interaction
 ![Terminal Result](docs/terminal_output.png)
-
+---
+---
 ### 2. Swagger UI (/docs)
 
 ![Swagger](docs/swagger_ui.png)
-
+---
+---
 ### 3. Auto-Generated Line Chart
 #### Query Asked:
 ![Line Chart Terminal](docs/chart_example_1_terminal.png)
@@ -87,9 +92,10 @@ python main.py or python -m main
 ![Line Chart Output](docs/chart_example_1.png)
 
 ---
-
+---
 ### 4. Auto-Generated Bar Chart
 #### Query Asked:
 ![Bar Chart Terminal](docs/chart_example_2_terminal.png)
 #### Result:
 ![Bar Chart Output](docs/chart_example_2.png)
+---
