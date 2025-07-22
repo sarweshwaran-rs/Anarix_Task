@@ -5,4 +5,3 @@ pandas
 python-dotenv
 matplotlib
 tabulate
-sse-starlette
