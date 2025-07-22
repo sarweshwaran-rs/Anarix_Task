@@ -15,8 +15,8 @@ Anarix_Task/
 |__ .env
 |__ data/
 |   |__ Product-Level Ad Sales and Metrics.csv
-|    |__ Product-Level Eligibility Table.csv
-|    |__ Product-Level Total Sales and Metrics.csv
+|   |__ Product-Level Eligibility Table.csv
+|   |__ Product-Level Total Sales and Metrics.csv
 |__ db/
 |   |__connection.py
 |   |__ queries.py
