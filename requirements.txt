@@ -1,5 +1,5 @@
 fastapi 
-uvicorn #FastApi Geteway
+uvicorn #FastApi Gateway
 sqlalchemy #To convert the response to SQL Query
 pandas
 python-dotenv
