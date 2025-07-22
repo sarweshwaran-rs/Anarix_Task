@@ -1,37 +1,39 @@
+#Importing the necessary packages
 from fastapi import FastAPI, Depends, HTTPException, status
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from typing import List, Dict, Any
-
+#Importing the AI Agent and the DB Related utilities
 from llm.agent import AIAgent
 from db.connection import get_db, get_all_table_schemas
 from db.queries import execute_sql, generate_img
 
 import uvicorn
-import os
 from tabulate import tabulate
-
+#Initializing the FastAPI
 app = FastAPI(
     title="E-Commerce AI Agent",
     description="An AI Agent Which answers the users Questions",
-    version="0.1.0"
+    version="1.1.0"
 )
-
+#Initilize the Gemini-based AI Agent
 try:
     ai_agent = AIAgent()
 except ValueError as error:
     print(f"Failed to initialize the AI Agent")
     exit(1)
 
+#Pydantic model for the incoming request
 class QuestionRequest(BaseModel):
     question: str
-
+#Response scchema: returns an original question, with the sql, and the answer
 class AnswerResponse(BaseModel):
     ori_question: str
     sql_query_gen: str
     answer_data: List[Dict[str, Any]]
     message: str = "Query executed Successfully"
 
+#Post request /ask API Endpoint
 @app.post("/ask", response_model=AnswerResponse)
 async def ask_question(
     request: QuestionRequest,
