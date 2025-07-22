@@ -92,7 +92,6 @@ The output runs in the following server: http://127.0.0.1:8000/docs or http://lo
 ![Line Chart Output](docs/chart_example_1.png)
 
 ---
----
 ### 4. Auto-Generated Bar Chart
 #### Query Asked:
 ![Bar Chart Terminal](docs/chart_example_2_terminal.png)
