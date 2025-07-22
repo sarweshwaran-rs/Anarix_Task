@@ -3,7 +3,7 @@
 This project is the Challenge Provided by the Anarix to create a AI-powered E-Commerce data assistant that:
 
     - Understands the Natural Language Questions
-    - Converets them to the any Database Query (I have selected the PostgreSQL) using the LLM (Gemini-2.5-flash)
+    - Converets them to the any Database Query (I have selected the PostgreSQL) using the LLM (gemini-2.5-flash)
     - Returns the tabulated response in the terminal using the tabulate library
     - Visualizes the results as graphs when applicable
 
@@ -54,3 +54,14 @@ python init_db.py or python -m init_db
 ``` bash
 python main.py or python -m main
 ```
+### Screenshots
+### 1. Terminal Interaction
+![Terminal Result](docs/terminal_output.png)
+
+### 2. Swagger UI (/docs)
+![Swagger UI] (docs/swagger_ui.png)
+
+### 3. Auto-Generated Chart
+![chart] (docs/chart_example_1.png)
+
+![chart] (docs/chart_example_2.png)
