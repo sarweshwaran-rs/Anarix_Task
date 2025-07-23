@@ -1,4 +1,4 @@
-## Anarix AI Agent Task
+## Anarix AI Agent Task (FastAPI + Gemini API, PostgreSQL)
 
 This project is the Challenge Provided by the Anarix to create a AI-powered E-Commerce data assistant that:
 
