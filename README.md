@@ -12,22 +12,24 @@ This project is the Challenge Provided by the Anarix to create a AI-powered E-Co
 
 ```
 Anarix_Task/
-|__ .env
+|__ .env                                  # Stores API_KEY and DB_URL for secure environment config
 |__ data/
 |   |__ Product-Level Ad Sales and Metrics.csv
 |   |__ Product-Level Eligibility Table.csv
 |   |__ Product-Level Total Sales and Metrics.csv
+|
 |__ db/
-|   |__connection.py
-|   |__ queries.py
+|   |__ connection.py     (* Sets up DB connection and extracts table schemas *)
+|   |__ queries.py        (* Executes SQL queries and generates visualizations by matplotlib *)
 |
 |__ llm/
-|   |__ agent.py
+|   |__ agent.py          (* Uses Gemini API to convert user Natural Language Question's into SQL queries *)
 |
-|__ init_db.py
-|__ requirements.py
-|__ TASK DESCRIPTION_GenAI Intern VIT.pdf
-|__ README.md
+|__ init_db.py            (* Loads CSV files into the database as tables *)
+|__ requirements.py       (* Script to define dependencies of the Project*)
+|__ TASK DESCRIPTION_GenAI Intern VIT.pdf 
+|__ README.md            # Project documentation
+
 ```
 ---
 
