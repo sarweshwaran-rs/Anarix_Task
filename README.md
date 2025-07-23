@@ -32,7 +32,17 @@ Anarix_Task/
 
 ```
 ---
+## Dependencies
 
+```Text
+    FastAPI, Uvicorn (Web Server)
+    SQLAlchemy (Database Access)
+    pandas (Data Handling)
+    Matplotlib (library for Chart/Visuvalization)
+    tabulate (Terminal Table)
+    python-dotenv (Environment variable loader)
+    google-generatveai (Gemini SDK)
+```
 ## Set UP Instructions
 
 ## 1. Add the Environment for your Database (postgres) DB_URL and the Gemini_API_KEY
